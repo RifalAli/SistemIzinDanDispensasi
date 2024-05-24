@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Bootstrap/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Izin & Dispensasi</title>
+</head>
+<!--
+    #00AECC : blue 1
+    #006ECC : blue 2
+    #00CDA8 : mid
+    #00CC61 : green 1
+    #00CC1C : green 2
+ -->
+<body>
+    <div>
+        <nav class="navigation navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#hero">
+                    <img src="../Image/logo.svg" alt="Logo" width="30" height="24" class="ms-5 mt-2 d-inline-block align-text-top">
+                    SmendaIzin
+                </a>
+                <ul class="navbar-nav me-5">
+                    <li class="nav-item me-4">
+                      <a class="nav-link" href="#hero">Beranda</a>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link" href="#izin">Izin</a>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link" href="#dispensasi">Dispensasi</a>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link" href="#list">List</a>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+        <section class="hero" id="hero">
+            <div class="d-flex">
+                <div class="hero-text">
+                    <h1>Melayani Kebutuhan Izin dan Dispensasi di Smenda</h1>
+                    <h2>Beri Alasan yang Mumpuni dan Masuk Akal</h2>
+                    <p>Dijamin Cepat, Mudah, dan Terpercaya</p>
+                    <button type="button"><a href="#izin" class="nav-link">Izin Sekarang</a></button>
+                    <!-- <a class="nav-link" href="#form">Izin Sekarang</a> -->
+                </div>
+                <img class="hero-image" src="../Image/hero.svg" alt="">
+            </div>
+        </section>
+        <section class="izin" id="izin">
+            <div class="p-3">
+                <h1 class="d-flex justify-content-center">Surat Izin</h1>
+                <div class="izin-container d-flex flex-row-reverse justify-content-center">
+                    <div class="penjelasan-izin">
+                        <div class="pengertian">
+                            <p>Surat izin digunakan untuk keperluan mendadak. Murid yang menggunakan surat izin akan diberi keterangan izin pada daftar hadir</p>
+                        </div>
+                        <div class="panduan">
+                            <h2>Panduan Penggunaan</h2>
+                            <ul>
+                                <li>Isi lalu kirim formulir yang tersedia sesuai dengan kondisi yang sebenar-benarnya</li>
+                                <li>Karena persetujuan akan dikirim lewat email, maka periksa email anda secara berkala</li>
+                                <li>Print dokumen yang dikirimkan, tinggalkan satu di kelas dan berikan satu kepada satpam</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-izin">
+                        <div>
+                            <label for="nama-izin">Nama: </label>
+                            <input class="form-control" id="nama-izin" type="text" placeholder="nama">
+                        </div>
+                        <div>
+                            <label for="email-izin">Email: </label>
+                            <input class="form-control" id="email-izin" type="email" placeholder="email@gmail.com">
+                        </div>
+                        <div>
+                            <label for="alasan-izin">Alasan: </label>
+                            <textarea class="form-control" id="alasan-izin" col="100" row="4" placeholder="alasan"></textarea>
+                        </div>
+                        <div>
+                            <label for="waktu_keluar-izin">Waktu Keluar: </label>
+                            <input class="form-control" id="waktu_keluar-izin" type="time">
+                        </div>
+                        <div>
+                            <label for="waktu_kembali-izin">Waktu Kembali: </label>
+                            <input  class="form-control" id="waktu_kembali-izin" type="time">
+                        </div>
+                        <div>
+                            <label for="ttd_siswa-izin">Tanda Tangan Siswa: </label>
+                            <input  class="form-control" id="ttd_siswa-izin" type="file" title="Upload TTD Siswa">
+                        </div>
+                        <div class="d-flex justify-content-end mt-3 gap-1">
+                            <button>Bersihkan</button>
+                            <button>Kirim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dispensasi" id="dispensasi">
+            <div class="p-3">
+                <h1 class="d-flex justify-content-center">Dispensasi</h1>
+                <div class="dispensasi-container d-flex justify-content-center">
+                    <div class="penjelasan-dispensasi">
+                        <div class="pengertian">
+                            <p>Surat Dispensasi digunakan untuk keperluan yang ditugaskan oleh sekolah secara langsung. Murid yang menggunakan surat dispensasi akan diberi keterangan hadir pada daftar hadir</p>
+                        </div>
+                        <div class="panduan">
+                            <h2>Panduan Penggunaan</h2>
+                            <ul>
+                                <li>Isi lalu kirim formulir yang tersedia sesuai dengan kondisi yang sebenar-benarnya</li>
+                                <li>Karena persetujuan akan dikirim lewat email, maka periksa email anda secara berkala</li>
+                                <li>Print dokumen yang dikirimkan kemudian tinggalkan di kelas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-dispensasi">
+                        <div>
+                            <label for="nama-dispensasi">Nama: </label>
+                            <input  class="form-control" id="nama-dispensasi" type="text" placeholder="nama">
+                        </div>
+                        <div>
+                            <label for="email-dispensasi">Email: </label>
+                            <input  class="form-control" id="email-dispensasi" type="email" placeholder="email@gmail.com">
+                        </div>
+                        <div>
+                            <label for="alasan-dispensasi">Alasan: </label>
+                            <textarea  class="form-control"  class="form-control" id="alasan-dispensasi" col="100" row="4" placeholder="alasan"></textarea>
+                        </div>
+                        <div>
+                            <label for="waktu_keluar-dispensasi">Waktu Keluar: </label>
+                            <input  class="form-control" id="waktu_keluar-dispensasi" type="datetime-local">
+                        </div>
+                        <div>
+                            <label for="waktu_kembali-dispensasi">Waktu Kembali: </label>
+                            <input  class="form-control" id="waktu_kembali-dispensasi" type="datetime-local">
+                        </div>
+                        <div>
+                            <label for="ttd_siswa-dispensasi">Tanda Tangan Siswa: </label>
+                            <input  class="form-control" id="ttd_siswa-dispensasi" type="file" title="Upload TTD Siswa">
+                        </div>
+                        <div>
+                            <label for="ttd_guru-dispensasi">Tanda Tangan Guru: </label>
+                            <input  class="form-control" id="ttd_guru-dispensasi" type="file" title="Upload TTD Guru">
+                        </div>
+                        <div class="d-flex justify-content-end mt-3 gap-1">
+                            <button>Bersihkan</button>
+                            <button>Kirim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="list" id="list">
+            <div class="p-3">
+                <h1 class="d-flex justify-content-center">List Izin & Dispensasi</h1>
+                <div class="list-container d-flex justify-content-start flex-wrap mt-4 mx-auto">
+                    <div class="card-izin">
+                        <h1>Izin</h1>
+                        <p>Nama: Asep</p>
+                        <p>Alasan: Ingin mengurus SIM</p>
+                        <p>Waktu Keluar: 08:00</p>
+                        <p>Waktu Kembali: 01:00</p>
+                        <p>TTD Siswa <img src="" alt="ttd siswa"></p>
+                        <p>TTD Guru <img src="" alt="ttd guru"></p>
+                    </div>
+                    <div class="card-dispensasi">
+                        <h1>Dispensasi</h1>
+                        <p>Nama: Joni</p>
+                        <p>Alasan: Persiapan Penerimaan Siswa Baru</p>
+                        <p>Waktu Keluar: 22/05/2024 07:00</p>
+                        <p>Waktu Kembali: 23/05/2024 03:00</p>
+                        <p>TTD Siswa <img src="" alt="ttd siswa"></p>
+                        <p>TTD Guru <img src="" alt="ttd guru"></p>
+                    </div>
+                    <div class="card-izin">
+                        <h1>Izin</h1>
+                        <p>Nama: Asep</p>
+                        <p>Alasan: Ingin mengurus SIM</p>
+                        <p>Waktu Keluar: 08:00</p>
+                        <p>Waktu Kembali: 01:00</p>
+                        <p>TTD Siswa <img src="" alt="ttd siswa"></p>
+                        <p>TTD Guru <img src="" alt="ttd guru"></p>
+                    </div>
+                    <div class="card-dispensasi">
+                        <h1>Dispensasi</h1>
+                        <p>Nama: Joni</p>
+                        <p>Alasan: Persiapan Penerimaan Siswa Baru</p>
+                        <p>Waktu Keluar: 20/05/2024 07:00</p>
+                        <p>Waktu Kembali: 21/05/2024 03:00</p>
+                        <p>TTD Siswa <img src="" alt="ttd siswa"></p>
+                        <p>TTD Guru <img src="" alt="ttd guru"></p>
+                    </div>
+                    <div class="card-izin">
+                        <h1>Izin</h1>
+                        <p>Nama: Asep</p>
+                        <p>Alasan: Ingin mengurus SIM</p>
+                        <p>Waktu Keluar: 08:00</p>
+                        <p>Waktu Kembali: 01:00</p>
+                        <p>TTD Siswa <img src="" alt="ttd siswa"></p>
+                        <p>TTD Guru <img src="" alt="ttd guru"></p>
+                    </div>
+                    <div class="card-dispensasi">
+                        <h1>Dispensasi</h1>
+                        <p>Nama: Joni</p>
+                        <p>Alasan: Persiapan Penerimaan Siswa Baru</p>
+                        <p>Waktu Keluar: 20/05/2024 07:00</p>
+                        <p>Waktu Kembali: 21/05/2024 03:00</p>
+                        <p>TTD Siswa <img src="" alt="ttd siswa"></p>
+                        <p>TTD Guru <img src="" alt="ttd guru"></p>
+                    </div>
+                    <div class="card-izin">
+                        <h1>Izin</h1>
+                        <p>Nama: Asep</p>
+                        <p>Alasan: Ingin mengurus SIM</p>
+                        <p>Waktu Keluar: 08:00</p>
+                        <p>Waktu Kembali: 01:00</p>
+                        <p>TTD Siswa <img src="" alt="ttd siswa"></p>
+                        <p>TTD Guru <img src="" alt="ttd guru"></p>
+                    </div>
+                    <div class="card-dispensasi">
+                        <h1>Dispensasi</h1>
+                        <p>Nama: Joni</p>
+                        <p>Alasan: Persiapan Penerimaan Siswa Baru</p>
+                        <p>Waktu Keluar: 20/05/2024 07:00</p>
+                        <p>Waktu Kembali: 21/05/2024 03:00</p>
+                        <p>TTD Siswa <img src="" alt="ttd siswa"></p>
+                        <p>TTD Guru <img src="" alt="ttd guru"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-dark text-light">
+            <div class="d-flex p-5 gap-5 justify-content-center">
+                <div class="info">
+                    <a class="navbar-brand" href="#">
+                        <img src="../Image/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        SmendaIzin
+                    </a>
+                    <p>Situs yang dibuat untuk mempermudah perizinan di internal Smenda</p>
+                </div>
+                <div class="eksplor">
+                    <h1>Eksplor</h1>
+                    <ul class="navbar-nav me-5">
+                        <li class="nav-item me-4">
+                          <a class="nav-link active" href="#hero">Beranda</a>
+                        </li>
+                        <li class="nav-item me-4">
+                          <a class="nav-link" href="#izin">Izin</a>
+                        </li>
+                        <li class="nav-item me-4">
+                          <a class="nav-link" href="#dispensasi">Dispensasi</a>
+                        </li>
+                        <li class="nav-item me-4">
+                          <a class="nav-link" href="#list">List</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="lanjutan">
+                    <h1>Lebih Lanjut</h1>
+                    <ul class="navbar-nav me-5">
+                        <li class="nav-item me-4">
+                          <a class="nav-link active" href="#">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item me-4">
+                          <a class="nav-link" href="#">Syarat & Ketentuan</a>
+                        </li>
+                        <li class="nav-item me-4">
+                          <a class="nav-link" href="#">Ketentuan Privasi</a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
