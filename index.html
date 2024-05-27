@@ -15,7 +15,8 @@
                     <img src="./Image/logo.svg" alt="Logo" width="30" height="24" class="ms-5 mt-2 d-inline-block align-text-top">
                     SmendaIzin
                 </a>
-                <ul class="navbar-nav me-5">
+                <img id="hamburger-menu" onclick="toggleMenu()" src="./Image/hamburger-menu-icon.svg" width="30" height="30" alt="menu">
+                <ul id="more-menu" class="navbar-nav me-5">
                     <li class="nav-item me-4">
                       <a class="nav-link" href="#hero">Beranda</a>
                     </li>
@@ -45,8 +46,7 @@
         </section>
         <section class="izin" id="izin">
             <div class="p-3">
-                <h1 class="d-flex justify-content-center">Surat Izin</h1>
-                <div class="izin-container d-flex flex-row-reverse justify-content-center">
+                <div class="izin-container d-flex justify-content-center">
                     <div class="penjelasan-izin">
                         <div class="pengertian">
                             <p>Surat izin digunakan untuk keperluan mendadak. Murid yang menggunakan surat izin akan diberi keterangan izin pada daftar hadir</p>
@@ -61,6 +61,7 @@
                         </div>
                     </div>
                     <div class="form-izin">
+                        <h1 class="d-flex justify-content-center">Surat Izin</h1>
                         <div>
                             <label for="nama-izin">Nama: </label>
                             <input class="form-control" id="nama-izin" type="text" placeholder="nama">
@@ -95,7 +96,6 @@
         </section>
         <section class="dispensasi" id="dispensasi">
             <div class="p-3">
-                <h1 class="d-flex justify-content-center">Dispensasi</h1>
                 <div class="dispensasi-container d-flex justify-content-center">
                     <div class="penjelasan-dispensasi">
                         <div class="pengertian">
@@ -111,6 +111,7 @@
                         </div>
                     </div>
                     <div class="form-dispensasi">
+                        <h1 class="d-flex justify-content-center">Dispensasi</h1>
                         <div>
                             <label for="nama-dispensasi">Nama: </label>
                             <input  class="form-control" id="nama-dispensasi" type="text" placeholder="nama">
@@ -269,7 +270,6 @@
             </div>
         </footer>
     </div>
-    <script>
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>
